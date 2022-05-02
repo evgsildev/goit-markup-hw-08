@@ -1,0 +1,34 @@
+@import 'base/variables';
+@import 'base/body';
+@import 'base/reset';
+
+@import 'utils/general';
+@import 'utils/visually-hidden';
+@import 'utils/section';
+@import 'utils/container';
+@import 'utils/card-set';
+@import 'utils/transition';
+
+
+@import 'components/header';
+@import 'components/logo';
+@import 'components/navigation';
+@import 'components/contacts';
+@import 'components/order';
+@import 'components/order-button';
+@import 'components/occupations';
+@import 'components/heading';
+@import 'components/qualities';
+@import 'components/team';
+@import 'components/social';
+@import 'components/clients';
+@import 'components/footer';
+@import 'components/adress';
+@import 'components/subscription';
+@import 'components/modal';
+@import 'components/form';
+
+/*Portfolio*/
+@import 'components/portfolio';
+@import 'components/menu';
+@import 'components/projects';

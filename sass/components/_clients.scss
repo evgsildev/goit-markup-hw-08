@@ -1,0 +1,39 @@
+.clients__list {
+    @include card-list;
+}
+
+.clients__item {
+    @include card-item (6);
+}
+
+.clients_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 210px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+
+    transition-property: border;
+
+    &:hover,
+    &:active,
+    &:focus {
+        border-color: $background-accent;
+    }
+
+    @media (min-width: 1200px) {
+        width: 170px;
+    }
+}
+
+.clients__icon {
+    fill: $icon-fill;
+
+    .clients_link:hover &,
+    .clients_link:active &,
+    .clients_link:focus & {
+        fill: $icon-accent;
+    }
+}

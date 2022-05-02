@@ -1,0 +1,41 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: $background-dark;
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.footer__logo {
+  margin-bottom: 20px;
+
+  color: $color-light;
+}
+
+.footer__heading {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $color-light;
+}
+
+.footer .social__link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer .social__link:hover,
+.footer .social__link:active,
+.footer .social__link:focus {
+  background-color: $background-accent;
+}
+
+.footer .social__icon {
+  fill: $icon-light;
+}
+

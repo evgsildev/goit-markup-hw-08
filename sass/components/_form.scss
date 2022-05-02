@@ -1,0 +1,131 @@
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__title {
+    margin-bottom: 12px;
+
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.15;
+    text-align: center;
+    color: $color-dark;
+}
+
+.form__label {
+    margin-bottom: 4px;
+
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+}
+
+.form__field {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.form__input {
+    width: 100%;
+    height: 40px;
+    padding-left: 42px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    cursor: pointer;
+    outline: none;
+
+    transition-property: border-color;
+    @extend %transition-style;
+
+    &:hover,
+    &:focus {
+        border-color: $background-accent;
+    }
+}
+
+
+.form__icon {
+    position: absolute;
+    top: 50%;
+    left: 14px;
+
+    transform: translateY(-50%);
+
+    .form__input:hover+&,
+    .form__input:focus-within+& {
+        fill: $icon-accent;
+    }
+}
+
+
+
+.form__comments {
+    height: 120px;
+    width: 100%;
+
+    margin-bottom: 20px;
+    padding-top: 12px;
+    padding-left: 16px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    transition-property: border-color;
+    @extend %transition-style;
+    
+    cursor: pointer;
+    resize: none;
+    outline: none;
+
+
+    &:hover,
+    &:focus {
+        border: 1px solid $background-accent;
+    }
+}
+
+
+.form__checklabel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    cursor: pointer;
+}
+
+.form__check {
+    width: 16px;
+    height: 15px;
+    margin-right: 8px;
+
+    border: 2px solid $color-dark;
+    border-radius: 2px;
+
+    .form__checkbox:checked + & {
+        background-image: url(./../images/checked.svg);
+        background-color: $background-accent;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+
+        border-color: $background-accent;
+    }
+
+}
+
+
+.form__link {
+    color: $color-accent;
+}
+
+.form__button {
+    display: block;
+    margin: 0 auto;
+}

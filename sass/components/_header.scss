@@ -1,0 +1,72 @@
+.header {
+    position: relative;
+    border-bottom: 1px solid #ececec;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* до таблет*/
+
+    @media (max-width: 767px) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+.header__logo {
+  /*  margin-right: 93px;  @media (min-width: 1200px)*/ 
+
+    color: $color-dark;
+}
+
+.switcher-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+.switcher-button .icon-cross {
+    display: none;
+}
+
+.switcher-button.is-open .icon-cross {
+    display: block;
+}
+
+.switcher-button.is-open .icon-menu {
+    display: none;
+}
+
+
+.switcher-button:hover .switcher-button__icon {
+    fill: $icon-accent;
+}
+
+.header__info {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+   
+
+    padding-left: 15px;
+    padding-bottom: 48px;
+
+    background: $background-modal;
+
+    font-weight: 500;
+    letter-spacing: 0.02em;
+
+    &.is-open {
+        display: block;
+    }
+}

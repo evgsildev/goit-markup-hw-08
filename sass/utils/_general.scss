@@ -1,0 +1,15 @@
+.list {
+    list-style: none;
+}
+
+.link {
+    display: inline-block;
+    text-decoration: none;
+    @extend %transition-style;
+
+}
+
+.icon {
+    transition-property: fill;
+    @extend %transition-style;
+}
