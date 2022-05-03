@@ -3,18 +3,11 @@
 }
 
 .social__item {
-    color: $color-accent;
-
     &:not(:last-child) {
-    margin-right: 20px;
-    }
-    
-    @media (min-width: 768px) {
-        &:not(:last-child) {
-        margin-right: 10px;
-        }
+     margin-right: 10px;
     }
 }
+
 
 .social__link {
     display: flex;
@@ -43,26 +36,3 @@
         fill: $icon-light;
     }
 }
-
-.social__info {
-    position: relative;
-
-    font-size: 18px;
-    line-height: 1.22;
-    color: $color-accent;
-
-    &::after {
-        content: "";
-        display: block;
-        position: absolute;
-        width: 22px;
-        height: 1px;
-        left: 100%;
-        top: 50%;
-
-        background-color: rgba(33, 33, 33, 0.2);
-
-        transform: rotate(90deg);
-    }
-}
-

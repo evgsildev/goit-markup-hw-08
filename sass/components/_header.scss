@@ -6,7 +6,6 @@
 .header__container {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* до таблет*/
 
     @media (max-width: 767px) {
         padding-top: 10px;
@@ -15,12 +14,21 @@
 }
 
 .header__logo {
-  /*  margin-right: 93px;  @media (min-width: 1200px)*/ 
-
     color: $color-dark;
+
+    @media (min-width: 1200px) {
+        margin-right: 93px;
+    }
+
+    &.hidden {
+        display: none;
+    }
 }
 
+
+
 .switcher-button {
+    margin-left: auto;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -50,23 +58,44 @@
     fill: $icon-accent;
 }
 
-.header__info {
+
+.menu-container {
     display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-   
-
-    padding-left: 15px;
-    padding-bottom: 48px;
-
-    background: $background-modal;
 
     font-weight: 500;
     letter-spacing: 0.02em;
 
     &.is-open {
         display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        
+        
+        padding-left: 15px;
+        padding-bottom: 48px;
+        
+        background: $background-modal;
     }
+}
+
+.menu-container__social {
+    display: inline-flex;
+}
+
+.menu-container__item {
+    padding-right: 10px;
+
+    &:not(:last-child) {
+        margin-right: 10px;
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+}
+
+
+.menu-container__link {
+    font-size: 18px;
+    line-height: 1.22;
+    color: $color-accent;
 }
