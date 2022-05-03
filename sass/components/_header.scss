@@ -16,15 +16,17 @@
 .header__logo {
     color: $color-dark;
 
-    @media (min-width: 1200px) {
-        margin-right: 93px;
-    }
-
     &.hidden {
         display: none;
     }
-}
 
+    @media (min-width: 768px) {
+        margin-right: 88px;
+    }
+    @media (min-width: 1200px) {
+        margin-right: 93px;
+    }
+}
 
 
 .switcher-button {
@@ -38,6 +40,10 @@
     background: transparent;
     border: none;
     cursor: pointer;
+
+    @media (min-width: 768px) {
+        display: none;
+    }
 }
 
 
@@ -78,10 +84,22 @@
         
         background: $background-modal;
     }
+
+    @media (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
+
+
 
 .menu-container__social {
     display: inline-flex;
+
+    @media (min-width: 768px) {
+        display: none;
+    }
 }
 
 .menu-container__item {

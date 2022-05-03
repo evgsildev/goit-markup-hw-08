@@ -1,9 +1,13 @@
+.navigation {
+    @media (min-width:768px){
+        margin-right: 84px;
+    }
+}
 .navigation__list {
-
-    font-size: 40px;
-    line-height: 47px;
-    
+  
     @media (max-width: 767px) {
+        font-size: 40px;
+        line-height: 47px;
         margin-bottom: 303px;
     }
 
@@ -15,7 +19,9 @@
 
 
 .navigation__item:not(:last-child) {
-    margin-right: 50px;
+    @media (min-width: 768px) {
+        margin-right: 50px;
+    }
 }
 
 .navigation__link {

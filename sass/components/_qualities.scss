@@ -1,7 +1,3 @@
-.qualities {
-    padding-bottom: 0;
-}
-
 .qualities__heading {
     margin-bottom: 10px;
 
@@ -15,20 +11,21 @@
     }
 }
 
-
-.qualities__item:not(:last-child) {
-    margin-bottom: 30px;
+.qualities__list {
+    @include card-list;
 }
-    @media (min-width: 1200px) {
-    .qualities__list {
-        @include card-list;
-        }
 
-    .qualities__item {
+.qualities__item {
+    @include card-item(1);
+
+    @media (min-width: 768px) {
+        @include card-item(2);
+    }
+
+    @media (min-width: 1200px) {
         @include card-item(4);
         }
 }
-
 
 .qualities__box {
     display: flex;

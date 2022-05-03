@@ -4,14 +4,21 @@
 }
 
 .clients__item {
-    @include card-item (6);
+    @include card-item(2);
+
+    @media (min-width: 768px) {
+        @include card-item(3);
+    }
+
+    @media (min-width: 1200px) {
+        @include card-item(6);
+    }
 }
 
 .clients_link {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 210px;
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
