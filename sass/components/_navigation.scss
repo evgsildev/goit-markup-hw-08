@@ -1,8 +1,3 @@
-.navigation {
-    @media (min-width:768px){
-        margin-right: 84px;
-    }
-}
 .navigation__list {
   
     @media (max-width: 767px) {
@@ -15,7 +10,6 @@
         display: flex;
     }
 }
-
 
 
 .navigation__item:not(:last-child) {

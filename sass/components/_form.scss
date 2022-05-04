@@ -7,10 +7,14 @@
     margin-bottom: 12px;
 
     font-size: 20px;
+    line-height: 1.5;
     font-weight: 700;
-    line-height: 1.15;
     text-align: center;
     color: $color-dark;
+
+    @media (min-width: 1200px) {
+        line-height: 1.15;
+    }
 }
 
 .form__label {
@@ -80,11 +84,18 @@
     resize: none;
     outline: none;
 
-
     &:hover,
     &:focus {
         border: 1px solid $background-accent;
     }
+
+    &::placeholder {
+        color: rgba(117, 117, 117, 0.5);
+    }
+
+    @media (min-width: 1200px) {
+    }
+
 }
 
 
@@ -94,16 +105,20 @@
     justify-content: center;
     margin-bottom: 30px;
 
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-
+    font-size: 12px;
+    line-height: 1.17;
     cursor: pointer;
+
+    @media (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71
+    }
 }
 
 .form__check {
     width: 16px;
     height: 15px;
-    margin-right: 8px;
+    margin-right: 8px; 
 
     border: 2px solid $color-dark;
     border-radius: 2px;

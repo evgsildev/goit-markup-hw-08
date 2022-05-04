@@ -28,7 +28,7 @@
     }
 }
 
-
+/*---------------Mobile Button--------------------*/
 .switcher-button {
     margin-left: auto;
     display: inline-flex;
@@ -45,7 +45,6 @@
         display: none;
     }
 }
-
 
 .switcher-button .icon-cross {
     display: none;
@@ -64,6 +63,7 @@
     fill: $icon-accent;
 }
 
+/*---------------Menu Containern--------------------*/
 
 .menu-container {
     display: none;
@@ -89,10 +89,12 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        flex-grow: 1;
+
     }
 }
 
-
+/*---------------Social links--------------------*/
 
 .menu-container__social {
     display: inline-flex;
