@@ -72,17 +72,21 @@
     letter-spacing: 0.02em;
 
     &.is-open {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         position: absolute;
+        width: 100vw;
+        height: 100vh;
         top: 100%;
-        left: 0;
-        width: 100%;
-        
-        
+        left: 0%;
+
         padding-left: 15px;
         padding-bottom: 48px;
         
         background: $background-modal;
+        z-index: 9;
+
     }
 
     @media (min-width: 768px) {
@@ -96,7 +100,7 @@
 
 /*---------------Social links--------------------*/
 
-.menu-container__social {
+.contacts-container__social {
     display: inline-flex;
 
     @media (min-width: 768px) {
@@ -104,7 +108,7 @@
     }
 }
 
-.menu-container__item {
+.contacts-container__item {
     padding-right: 10px;
 
     &:not(:last-child) {
@@ -114,7 +118,7 @@
 }
 
 
-.menu-container__link {
+.contacts-container__link {
     font-size: 18px;
     line-height: 1.22;
     color: $color-accent;
