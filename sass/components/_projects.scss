@@ -3,10 +3,18 @@
 }
 
 .projects__item {
-    @include card-item (3);
+    @include card-item (1);
+
+    @media (min-width: 768px) {
+        @include card-item (2);
+    }
+    @media (min-width: 1200px) {
+        @include card-item (3);
+    }
 }
 
 .projects__link {
+    width: 100%;
     transition-property: box-shadow;
 
     &:hover,
@@ -24,17 +32,13 @@
     overflow: hidden;
 }
 
-.projects__image {
-    display: block;
-}
 
 .projects__text {
     position: absolute;
     height: 100%;
-    padding: 63px 24px;
     top: 0;
     left: 0;
-
+    padding: 77px 24px;
     font-size: 18px;
     line-height: 1.56;
     color: $color-light;
@@ -51,6 +55,14 @@
     .projects__link:focus & {
         transform: translateY(0%);
     }
+
+    @media (min-width: 768px) {
+        padding: 49px 24px;
+    }
+    @media (min-width: 1200px) {
+        padding: 63px 24px;
+    }
+
 }
 
 .projects__titlebox {
