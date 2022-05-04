@@ -10,8 +10,12 @@
 
 
 .contacts__item {
-    @media (max-width: 767px) {
-        font-size: 24px; 
+    font-size: 24px;
+    @media (max-width: 479px) {
+        line-height: 2;
+    }
+    
+    @media (min-width: 479px) and (max-width: 767px) {
         &:first-child {
             margin-bottom: 32px;
             font-size: 34px;
@@ -24,6 +28,7 @@
 
         &:first-child {
             margin-bottom: 10px;
+            font-size: 12px;
         }
     }
 
@@ -32,6 +37,7 @@
         line-height: 1.14;
 
         &:first-child   {
+            font-size: 14px;
             margin-bottom: 0px;
             margin-right: 30px;
         }
