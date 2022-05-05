@@ -80,7 +80,7 @@
         justify-content: space-between;
         position: fixed;
         width: 100%;
-        min-height: 100vh;
+        height: 100%;
         top: 0;
         left: 0;
 
@@ -90,6 +90,7 @@
         
         background: $background-modal;
         z-index: 2;
+        overflow-y: scroll;
 
     }
 
