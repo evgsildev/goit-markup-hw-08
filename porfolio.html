@@ -29,25 +29,7 @@
           mobile-logo
           ><span class="logo__accent">Web</span>Studio</a
         >
-        <button
-          type="button"
-          class="switcher-button"
-          aria-expanded="false"
-          aria-controls="menu-container"
-          data-menu-button
-        >
-          <svg
-            class="switcher-button__icon icon"
-            width="24"
-            height="16"
-            aria-label="Переключатель мобильного меню"
-          >
-            <use class="icon-cross" href="./images/icons.svg#icon-cross"></use>
-            <use class="icon-menu" href="./images/icons.svg#icon-burger"></use>
-          </svg>
-        </button>
-
-        <div class="menu-container" id="menu-container" data-menu>
+        <div class="header__nav">
           <nav class="navigation">
             <ul class="navigation__list list">
               <li class="navigation__item">
@@ -65,59 +47,118 @@
               </li>
             </ul>
           </nav>
+          <ul class="contacts list">
+            <li class="contacts__item">
+              <a class="contacts__link link" href="mailto:info@devstudio.com">
+                <svg class="contacts__icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link link" href="tel:+380961111111"
+                ><svg class="contacts__icon" width="10" height="16">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </div>
 
-          <div class="contacts-container">
-            <ul class="contacts list">
-              <li class="contacts__item">
-                <a class="contacts__link link" href="mailto:info@devstudio.com">
-                  <svg class="contacts__icon" width="16" height="12">
-                    <use href="./images/icons.svg#icon-mail"></use>
-                  </svg>
+        <button
+          type="button"
+          class="menu-btn"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          data-menu-button
+        >
+          <svg
+            class="menu-btn__icon icon"
+            width="20"
+            height="20"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="menu-btn__icon-cross"
+              href="./images/icons.svg#icon-cross"
+            ></use>
+            <use
+              class="menu-btn__icon-menu"
+              href="./images/icons.svg#icon-burger"
+            ></use>
+          </svg>
+        </button>
+
+        <!--Mobile Menu-->
+        <div class="mobile-menu" id="mobile-menu" data-menu>
+          <nav class="mobile-menu__nav mobile-nav">
+            <ul class="mobile-nav__list list">
+              <li class="mobile-nav__item">
+                <a class="mobile-nav__link link" href="index.html">Студия</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a
+                  class="mobile-nav__link link link--current"
+                  href="porfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="mobile-nav__item">
+                <a class="mobile-nav__link link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="mobile-menu__wrapper">
+            <ul class="mobile-menu__contacts mobile-contacts list">
+              <li class="mobile-contacts__item">
+                <a
+                  class="mobile-contacts__link link"
+                  href="mailto:info@devstudio.com"
+                >
                   info@devstudio.com
                 </a>
               </li>
-              <li class="contacts__item">
-                <a class="contacts__link link" href="tel:+380961111111"
-                  ><svg class="contacts__icon" width="10" height="16">
-                    <use href="./images/icons.svg#icon-smartphone"></use>
-                  </svg>
+              <li class="mobile-contacts__item">
+                <a class="mobile-contacts__link link" href="tel:+380961111111">
                   +38 096 111 11 11
                 </a>
               </li>
             </ul>
-
-            <ul class="contacts-container__social list">
-              <li class="contacts-container__item">
+            <ul class="mobile-menu__soial mobile-soial list">
+              <li class="mobile-soial__item">
                 <a
                   href="#"
-                  class="contacts-container__link link"
+                  class="mobile-soial__link link"
                   rel="noopener noreferrer"
                   target="_blank"
                   >Instagram</a
                 >
               </li>
-              <li class="contacts-container__item">
+              <li class="mobile-soial__item">
                 <a
                   href="#"
-                  class="contacts-container__link link"
+                  class="mobile-soial__link link"
                   rel="noopener noreferrer"
                   target="_blank"
                   >Twitter</a
                 >
               </li>
-              <li class="contacts-container__item">
+              <li class="mobile-soial__item">
                 <a
                   href="#"
-                  class="contacts-container__link link"
+                  class="mobile-soial__link link"
                   rel="noopener noreferrer"
                   target="_blank"
                   >Facebook</a
                 >
               </li>
-              <li class="contacts-container__item">
+              <li class="mobile-soial__item">
                 <a
                   href="#"
-                  class="contacts-container__link link"
+                  class="mobile-soial__link link"
                   rel="noopener noreferrer"
                   target="_blank"
                   >LinkedIn</a

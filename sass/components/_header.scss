@@ -16,10 +16,6 @@
 .header__logo {
     color: $color-dark;
 
-    &.hidden {
-        display: none;
-    }
-
     @media (min-width: 768px) {
         margin-right: 88px;
     }
@@ -28,107 +24,16 @@
     }
 }
 
-/*---------------Mobile Button--------------------*/
-.switcher-button {
-    margin-left: auto;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-    width: 40px;
-
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    z-index: 5;
-
-    @media (min-width: 768px) {
-        display: none;
-    }
-}
-
-.switcher-button.is-open {
-    position: fixed;
-    right: 15px;
-    top: 10px;
-}
-
-.switcher-button .icon-cross {
-    display: none;
-}
-
-.switcher-button.is-open .icon-cross {
-    display: block;
-}
-
-.switcher-button.is-open .icon-menu {
-    display: none;
-}
-
-
-/*---------------Menu Containern--------------------*/
-
-.menu-container {
+.header__nav {
     display: none;
 
-    font-weight: 500;
-    letter-spacing: 0.02em;
-
-    &.is-open {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-
-        padding-top: 60px;
-        padding-left: 15px;
-        padding-bottom: 48px;
-        
-        background: $background-modal;
-        z-index: 2;
-        overflow-y: scroll;
-
-    }
-
-    @media (min-width: 768px) {
+    @media screen and (min-width: 768px) {
         display: flex;
         align-items: center;
         justify-content: space-between;
         flex-grow: 1;
-
+        
+        font-weight: 500;
+        letter-spacing: 0.02em;
     }
-}
-
-/*---------------Social links--------------------*/
-
-.contacts-container__social {
-    @media (min-width: 480px) {
-        display: inline-flex;    
-    }
-    @media (min-width: 768px) {
-        display: none;
-    }
-}
-
-.contacts-container__item {
-    margin-bottom: 10px;
-    
-    @media (min-width: 480px) {
-        margin-bottom: 0;
-        padding-right: 10px;
-        &:not(:last-child) {
-            margin-right: 10px;
-            border-right: 1px solid rgba(33, 33, 33, 0.2);
-        }
-    }
-}
-
-.contacts-container__link {
-    font-size: 18px;
-    line-height: 1.22;
-    color: $color-accent;
 }
