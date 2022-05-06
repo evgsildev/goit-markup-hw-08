@@ -390,9 +390,30 @@ img {
   padding-bottom: 200px;
   max-width: 1600px;
   text-align: center;
-  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../images/hero.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+}
+
+@media (max-width: 767px) {
+  .order {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../images/index/mobile/hero-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 768px) {
+  .order {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../images/index/tablet/hero-tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1200px) {
+  .order {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../images/index/desktop/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .order__heading {
