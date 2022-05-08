@@ -1,13 +1,13 @@
 .contacts {
     line-height: 1.17;
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         display: inline-flex;
     }
 }
 
 
 .contacts__item {
-    @media (min-width: 768px) {
+    @media screen and (min-width: 768px) {
         font-size: 12px;
 
         &:first-child {
@@ -15,7 +15,7 @@
         }
     }
 
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         font-size: 14px;
         line-height: 1.14;
 
@@ -39,7 +39,7 @@
         color: $color-accent;
     }
     
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         justify-content: center;
         padding-top: 32px;
         padding-bottom: 32px;

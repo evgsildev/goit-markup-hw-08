@@ -6,7 +6,7 @@
     line-height: 1.14;
     text-transform: uppercase;
 
-    @media (max-width:767px) {
+    @media screen and (max-width:767px) {
         text-align: center;
     }
 }
@@ -18,11 +18,11 @@
 .qualities__item {
     @include card-item(1);
 
-    @media (min-width: 768px) {
+    @media screen and (min-width: 768px) {
         @include card-item(2);
     }
 
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         @include card-item(4);
         }
 }

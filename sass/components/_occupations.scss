@@ -1,7 +1,7 @@
 .occupations {
     padding-top: 0;
     
-    @media (max-width: 1199px) {
+    @media screen and (max-width: 1199px) {
         display: none;
     }
 }

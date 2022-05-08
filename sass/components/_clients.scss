@@ -31,7 +31,7 @@
         border-color: $background-accent;
     }
 
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         width: 170px;
     }
 }
