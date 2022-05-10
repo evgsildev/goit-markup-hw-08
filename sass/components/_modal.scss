@@ -11,6 +11,7 @@
     @extend %transition-style;
 
     z-index: 6;
+    overflow: scroll;
 }
 
 .backdrop.is-hidden {
@@ -25,7 +26,7 @@
     transform: translate(-50%, -50%) scale(1);
 
     width: 100%;
-    padding: 40px 20px;
+    padding: 25px 20px;
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);

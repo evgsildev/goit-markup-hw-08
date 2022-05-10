@@ -2,8 +2,8 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 200px;
-    height: 50px;
+    width: 180px;
+    height: 45px;
 
     font-family: $font-main;
     color: $color-light;
@@ -26,5 +26,10 @@
     &:active,
     &:focus {
         opacity: 0.8;
+    }
+
+    @media screen and (min-width: 400px) {
+        width: 200px;
+        height: 50px;
     }
 }
