@@ -15,7 +15,10 @@
 
 
 .projects__link {
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    height: 100%;
     transition-property: box-shadow;
 
     &:hover,
@@ -69,16 +72,12 @@
     }
 }
 .projects__titlebox {
+    display: flex;
+    flex-direction: column;
     padding: 20px 24px;
-
     border: 1px solid #eeeeee;
     border-top: none;
-
-    .projects__item:first-child  & {
-        @media screen and (min-width: 768px) and (max-width: 1199px) {
-            padding-bottom: 56px;
-        }
-    }
+    flex-grow: 1;
 }
 
 
